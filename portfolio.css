@@ -1,0 +1,303 @@
+
+/* Body position set to "relative" for scroll spying */ 
+body {
+    color: white;
+    text-align: center;
+    background-color:  gray;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav-pills {
+    font-family: Lobster;
+    background-color: black;
+    font-size: 1.6em;
+}
+
+
+.nav-pills a{
+    color: #e2eef7;
+}
+
+.nav-pills a:hover {
+    color:black;
+}
+
+div#header {
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+#row_2 {
+    
+    background-color: #29088A;
+    padding: 3%;
+    color: white;
+    border-radius: 75px 75px 0 0;
+    margin-top: 50px;
+}
+
+#row_3 {
+    
+    background-color: #00FF40;
+    padding: 3em;
+    color: black;
+    
+}
+
+
+#row_4 {
+    
+    background-color: rgb(200,200,200);
+    padding-bottom: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 0 0 75px 75px;
+}
+
+#row_5 {
+    
+    background-color: black;
+    color: white;
+    width: 105%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    height: 5.44em;
+}
+
+
+/* reduce widths of rows 2,3,4 and 5 */
+div.resize {
+    
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+/* Style icon link butons at bottom of page */
+.buttonStyle    {
+    color: aquamarine;
+    border-radius: 50%;
+    margin-bottom: -3.9em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    height: 5em;
+    width: 5em;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+.buttonStyle#facebookId, .buttonStyle#twitterId  {
+    background-color: white;
+}
+
+.buttonStyle#githubId  {
+    background-color: black;
+}
+
+.buttonStyle#linkedinId  {
+    background-color: blue;
+}
+    
+.fa {
+    
+    font-size: 2.5em;
+}
+   .fa-linkedin, .fa-github   {
+    color: white;    
+}
+
+.fa-facebook {
+    color: darkblue;
+}
+
+.fa-twitter {
+    color: blue;
+}
+
+#linkButtonHeading {
+    font-size: 3em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    text-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); 
+    
+}
+
+blockquote {
+    border: none;
+}
+
+/* Used to round corner of thumbnail images */
+.cornersRounded {
+    
+    border-radius: 20%;
+    padding: 5%;
+}
+
+/* Needed for alignment of project hyperlinks */
+
+#project_link_style {
+    
+    padding-left: 25px;
+    padding-bottom: 20px;
+
+}
+
+#row4_heading_adj {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Used in portrait picture */
+#portrait_adj {
+    display: block;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid cyan;
+}
+
+/* Used to Style the submit button */
+#submit_btn_style {
+    
+    float:left;  
+    margin-top: 16px;
+    color: gray;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#paragraph_style {
+  
+  margin-left: 20px;
+  text-align: justify;
+  
+}
+
+#buttonLink {
+    
+    margin-top : 6em;
+}
+
+
+.jumbotron {
+    
+    background-color: gray;
+}
+
+/* Makes all images fit the same way inside the thumbnail */
+.thumbnail img {
+    height:350px;
+    width:100%;
+}
+
+.thumbnail {
+    border-radius: 2em;
+    height: 432px;
+}
+
+/* Basic Style */
+.form-group {
+    position: relative; 
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;  
+    font-weight: 500;
+}
+
+/* Height and padding for Entry Data Field, affects all field since it is a base class of all fields */
+.form-group [data-toggle="floatLabel"] {
+    height: 44px;  
+    padding-top: 16px;
+/*    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);   */
+}
+
+/* Specifying ending label positioning and font characteristics of floating label in all Data Entry fields */
+.form-group [data-toggle="floatLabel"] + label {
+ /*   color: rgb(255, 0, 0); */
+ /*   font-family: 'Roboto', sans-serif;  */
+/*    font-size: 1em; */    /* was 12px; */
+/*    font-weight: 500; */
+	left: 12px;         /*left : was 12px; for floating label */
+	opacity: 1;
+    position: absolute;
+	top: 3px;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Specifying positioning in font characteristics of floating label in rerquired Data Entry fields */
+.form-group [data-toggle="floatLabel"]:required + label {
+  /*  color: rgb(255, 0, 0);  */
+    
+}
+
+/* Custom Styles for Textarea */
+.form-group.form-group-textarea {
+ /*   background-color: rgb(0, 0, 0); */
+/*	border-radius: 1px;   */
+/*	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); */
+    margin: auto;   /* Was 20px 15px  */
+	position: relative; 
+
+}
+/* Member of the classes  */
+.form-group.form-group-textarea textarea {
+    height: 100px;                /* 34px  */
+    resize:none; /* Originall None */
+    margin-top:   10px;
+}
+
+/* Affects floating font size of the floating label in text box  */
+.form-group.form-group-textarea label {
+/*  color: rgb(255, 255, 255); */                /* originally rgb(160,160,160) */ 
+/*	font-family: 'Roboto', sans-serif; */
+/*	font-size: 1em;    */
+/*	font-weight: 500;  */
+}
+
+/* Text Box   */
+.form-group.form-group-textarea .form-control {
+	border-radius: 0;
+    border-width: 0;
+/*	box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);  */
+}
+
+/* Final Position of floating Label in textarea */
+.form-group.form-group-textarea [data-toggle="floatLabel"] + label {
+	top: 2px;
+}
+
+/* Positioning and condition of all original placeholder label before running */
+.form-group [data-toggle="floatLabel"][data-value=""] {
+    padding-top: 6px;
+}
+
+/* Starting Condition of floating label in all fields */
+.form-group [data-toggle="floatLabel"][data-value=""] + label {
+	opacity: 0;
+	top: 18px; 
+}
+

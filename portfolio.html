@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project #2 Personal Portfolio Page</title>
+        <meta name="description" content="Portfolio project">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link rel="stylesheet" href="portfolio.css">     
+<!-- 
+The HTML is divided into four parts: 1) the header, which consists of an unordered list of nav-pills. Actually two unordered lists because one is used as a target for the Scroll Spy operation by the id "myScrollspy. A col-md-9 module and and col-md-3 module as nestled inside a Bootstrap row; 2) is the "About me" section consisting of a
+paragraph and a rounded image. 3) is the personal interest section, consisting of two rows with embedded columns with thumbnails "images and captions" of various hobbies   
+and the last boostsrap column is a list going to various web programming projects. 4) A contact information form consisting of floating lables while filling it out, and 5) finally a footer with another unordered list of nav-pill object which connect to varios social media such as Facebook, Linked In, Twitter and Github.  
+-->    
+    </head>
+    <body class="container-fluid" data-spy="scroll" data-target="#myScrollspy" >   <!-- set up for scroll spy -->
+      <div class="jumbotron">
+      
+        <div id="header"> 
+            <div class="row no-gutter">     <!-- Beginning Row 1 also header and buttons  -->
+                <div class="col-md-9 myColumn">
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href="#pg1">Al Yablonsky</a>
+                        </li>  
+                    </ul>
+                    
+                </div>
+                <div class="col-md-3" id="myScrollspy" >                         <!-- This list of nav-pills is set up for scroll  -->
+                    <ul class="nav nav-pills">                                   <!-- "pull-right" reverses oder of the list of nav-pills, must be written in reverse order --> 
+                        <li class="active pull-right">                           <!-- nav-pills contain links to appropriate section -->
+                            <a href="#pg3" target="_blank ">Contact</a>
+                        </li>
+                        <li class="pull-right">
+                            <a href="#pg2" target="_blank">Interests</a>
+                        </li>  
+                        <li class="pull-right">
+                            <a href="#pg1" target="_blank">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    <!-- end of row 1 -->
+        </div>     <!-- end of header -->
+        
+        
+        <div class="resize">                        <!-- Next two rows are resized 60% -->
+        
+            <div id="pg1"></div>
+            <div class="row no-gutter" id="row_2">    <!-- Beginning of Row 2 -->
+                <div class="col-md-2"></div>
+                <div class="col-md-8">   
+                    <div>
+                        <h1 class="text-center">About</h1>
+                    <blockquote><p class="text-justify">Great code is like ambrosia; poor code is like quicksand. With great code what you desire actually takes place; poor code results in a slow, unanticipated, agonizing death. My innate curiosity to find the bugs enables me to produce the ambrosia of great code. My process is to visualize the model, develop components, and verify each part functions before assembling the units. I enjoy collaboration with the people responsible for all the application components. My curiosity of people makes me interested in the client's perspective. Great code develops dynamic web applications that work for the client.<br></blockquote> 
+                       <h4>Specialties: HTML5, CSS3, Angular, Mongo DB, Javascript 6. Node,JS, Express.JS.</h4>
+                    </div>   
+                </div>  
+                <div class="col-md-2">
+                <img class="img-responsive" id="portrait_adj" src="http://polytopia.net/al_y.jpg">
+                </div>
+                
+            </div>        <!-- End of row2 -->
+        
+        <div id="pg2"></div>
+        <div id="row_3">   <!-- Beginning of  Row 3 (actually contains two rows) contains personal interest thumbnails -->
+        
+            <div class="row">
+                <h1>Interests</h1><br><br>
+    
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption"><h2 class="text-center">Multi Dimensional Geometry</h2></div>
+                    <img class="img-fluid cornersRounded img-center-block" src="http://polytopia.net/Polyhedonist.jpg">        
+                    </div>
+                </div>
+            <div class="col-md-6">
+                
+                <div class="thumbnail">
+                        <div class="caption"><h2 class="text-center">Elementary Particle Physics</h2></div>
+                    <img class="img-fluid cornersRounded img-center-block" src="http://polytopia.net/Standard_Theory.jpg">  
+                </div>
+            </div>
+            
+            </div>   
+        
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="thumbnail" >
+                        <div class="caption"><h2 class="text-center">Cosmology</h2></div>
+                    <img class="img-fluid cornersRounded" src="http://polytopia.net/galactic_cluster.jpg">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="thumbnail" id="project_link_style">  
+                                                         
+                        <div class="caption"><h2 class="text-center">Web Site Portfolio</h2></div>
+                        <a href="https://codepen.io/AlYablonsky/pen/GNqOLX" target="_blank"><h4 class="text-left">Tribute Page</h4></a>
+                        <a href="https://codepen.io/AlYablonsky/pen/PbOZQo" target="_blank"><h4 class="text-left">Build a Personal Portfolio Webpage</h4></a>
+                        <a href="http://codepen.io/AlYablonsky/pen/JbBVPe" target="_blank"><h4 class="text-left">Build a Random Quote Machine</h4></a>
+                        <a href="#" target="_blank"><h4 class="text-left">Show the Local Weather</h4></a>
+                        <a href="#" target="_blank"><h4 class="text-left">Build a Wikipedia Viewer</h4></a>
+                        <a href="#" target="_blank"><h4 class="text-left">Use the Twitch.tv JSON API</h4></a>
+                        <a href="#" target="_blank"><h4 class="text-left">Build a JavaScript Calculator</h4></a>
+                        <a href="#" target="_blank"><h4 class="text-left"> Build a Pomodoro Clock Incomplete</h4></a>
+                        <a href="#" target="_blank"><h4 class="text-left">Build a Tic Tac Toe Game</h4></a>
+                        <a href="#" target="_blank"><h4 class="text-left">Build a Simon Game</h4></a>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>   <!-- End of Row3 -->
+            
+    
+                
+              
+            <div class="row no-gutter" id="row_4">  <!-- Beginning of Row 4   --> 
+ <!-- Row4 contains the the form contact information as well as a short descriptive paragrapg, in addition it has hyperlinked iconized buttons for twitter, facebook, linkedin and github   -->
+                    <div id="pg3"></div>
+                      <h1 id="row4_heading_adj" >Contact</h1>
+                     
+                <div class="col-md-6">
+                                   
+                <form>
+                    <div class="form-group">
+        		          <input id="userName" type="text" name="userName" placeholder="User Name" class="form-control" required data-toggle="floatLabel" data-value="no-js" >
+				    <label for="userName">User Name</label>
+			         </div>
+                    <div class="form-group">
+        		          <input id="email" type="email" name="email"   placeholder="Email Address" class="form-control" required data-toggle="floatLabel" data-value="no-js">
+				    <label for="email">Email Address</label>
+			         </div>
+                    <div class="form-group">
+        		          <input id="phoneNumber" type="tel" name="phoneNumber"  pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Phone Number ###-###-####" class="form-control" required data-toggle="floatLabel" data-value="no-js">
+				    <label for="phoneNumber">Phone Number ###-###-####</label>
+			         </div>
+                    
+                    <div class="form-group form-group-textarea">
+            	       <textarea id="message" name="message" placeholder="Message" class="form-control" data-toggle="floatLabel" data-value="no-js" ></textarea>
+				        <label for="message">Message</label>
+			         </div>
+                        <button type="submit" class="btn btn-default"  id="submit_btn_style" >Send</button>
+                    </form>
+                    
+                  <div id="buttonLink">  
+                       <h2 id="linkButtonHeading">Across the WWW</h2>
+                    <a href="http://twitter.com" target="_blank"><button class="btn btn-default buttonStyle" id="twitterId"><i class="fa fa-twitter"></i></button></a>           
+                    <a href="http://facebook.com" target="_blank"><button class="btn btn-default buttonStyle" id="facebookId"><i class="fa fa-facebook"></i></button></a>
+                    <a href="http://linkedin.com" target="_blank"><button class="btn btn-default buttonStyle" id="linkedinId"><i class="fa fa-linkedin"></i></button></a>
+                    <a href="http://github.com" target="_blank"><button class="btn btn-default buttonStyle" id="githubId"><i class="fa fa-github "></i></button></a>      
+                </div>
+                    
+                        
+                </div> 
+                    <div class="col-md-6">
+                        <blockquote><p class="text-left" id="paragraph_style">
+                        Would you like to contact me? I am passionate about coding, although at this point I cannot say every statement should end in a semicolon. Let's discuss the components of a new application! Or would it be about black holes, neutron stars or quasars? Or perhaps the latest experiments at the Large Hadron Collider! Either way contact me and I will return your message ASAP!<br>
+                        Best regards,<br>
+                        Al Yablonsky
+                        </p></blockquote>
+                
+                    </div>
+            </div>  <!-- End of Row 4 -->
+                                
+        
+                  
+        
+    </div>   <!-- End of resize --> 
+        <div class="row" id="row_5"> <!-- beginning of row 5 -->
+          <h5 class="text-center">Al Yablonsky &copy; 2016. All rights reserved</h5>
+        </div>    <!-- end of row 5 -->
+              
+          
+          
+        </div>   <!-- Jumbotron  -->
+         <script src="portfolio.js"></script> 
+    </body>
+</html>
