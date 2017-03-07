@@ -49,10 +49,10 @@ div#header {
 #row_2 {
     
     background-color: #29088A;
-    padding: 3%;
+    padding: 4em;
+	margin-top: 4em;
     color: white;
-    border-radius: 75px 75px 0 0;
-    margin-top: 50px;
+    border-radius: 4em 4em 0 0;
 }
 
 #row_3 {
@@ -67,10 +67,8 @@ div#header {
 #row_4 {
     
     background-color: rgb(200,200,200);
-    padding-bottom: 10%;
-    padding-left: 3%;
-    padding-right: 3%;
-    border-radius: 0 0 75px 75px;
+	padding: 0 2em 3em 2em; 
+    border-radius: 0 0 4em 4em;
 }
 
 #row_5 {
@@ -82,8 +80,7 @@ div#header {
     bottom: 0;
     left: 0;
     z-index: 1;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
+	padding: 1.5em 0 1.5em 0;
     height: 5.44em;
 }
 
@@ -96,16 +93,14 @@ div.resize {
     margin-right: auto;  
 }
 
-/* Style icon link butons at bottom of page */
+/* Style icon link buttons at bottom of page */
 .buttonStyle    {
     color: aquamarine;
     border-radius: 50%;
-    margin-bottom: -3.9em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+	margin: 0 1.5em 0 1.5em;
     height: 5em;
     width: 5em;
-    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); 
+    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -139,9 +134,9 @@ div.resize {
 
 #linkButtonHeading {
     font-size: 3em;
-    margin-bottom: 1em;
-    font-weight: 800;
-    text-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); 
+	margin-bottom: 1em;
+	font-weight: 800;
+	text-shadow:  .2em .2em .05em rgba(0, 0, 0, 0.3);
     
 }
 
@@ -153,47 +148,46 @@ blockquote {
 .cornersRounded {
     
     border-radius: 20%;
-    padding: 5%;
+    padding: 3em;
 }
 
 /* Needed for alignment of project hyperlinks */
 
 #project_link_style {
     
-    padding-left: 25px;
-    padding-bottom: 20px;
+    padding-left: 4em;
+    padding-bottom: 0;
 
 }
 
 #row4_heading_adj {
     padding-top: 1em;
     padding-bottom: 1em;
+	text-shadow: .15em .15em .05em rgba(0, 0, 0, 0.3);
+	font-weight: 800;
 }
 
 /* Used in portrait picture */
 #portrait_adj {
     display: block;
-    margin-left: auto;
-    margin-top: 25px;
-    margin-right: auto;
+  	margin: auto auto auto 2.5em;
     border-radius: 50%;
-    border: 5px solid cyan;
+    border: .5em solid cyan;
 }
 
 /* Used to Style the submit button */
 #submit_btn_style {
     
     float:left;  
-    margin-top: 16px;
+    margin-top: 1.3em;
     color: gray;
-    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); 
+    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3); 
 }
 
 #paragraph_style {
-  
-  margin-left: 20px;
+  padding-left: 2em;
   text-align: justify;
-  
+  text-shadow:  .2em .2em .05em rgba(0, 0, 0, 0.96);
 }
 
 #buttonLink {
@@ -209,19 +203,20 @@ blockquote {
 
 /* Makes all images fit the same way inside the thumbnail */
 .thumbnail img {
-    height:350px;
+    height: 100%;
     width:100%;
 }
 
 .thumbnail {
     border-radius: 2em;
-    height: 432px;
+    height: 30em;
+	padding-bottom: 5em;
 }
 
 /* Basic Style */
 .form-group {
     position: relative; 
-    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3);
     color: rgb(255, 0, 0);
     font-family: 'Roboto', sans-serif;
     font-size: 1em;  
@@ -230,74 +225,32 @@ blockquote {
 
 /* Height and padding for Entry Data Field, affects all field since it is a base class of all fields */
 .form-group [data-toggle="floatLabel"] {
-    height: 44px;  
-    padding-top: 16px;
-/*    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);   */
+    height: 3em; 
+    padding-top: .9em;   
+
 }
 
 /* Specifying ending label positioning and font characteristics of floating label in all Data Entry fields */
 .form-group [data-toggle="floatLabel"] + label {
- /*   color: rgb(255, 0, 0); */
- /*   font-family: 'Roboto', sans-serif;  */
-/*    font-size: 1em; */    /* was 12px; */
-/*    font-weight: 500; */
-	left: 12px;         /*left : was 12px; for floating label */
+	left: .6em;         
 	opacity: 1;
     position: absolute;
-	top: 3px;
+	top: .1em;
 	transition: all 0.3s ease-in-out;
 }
 
-/* Specifying positioning in font characteristics of floating label in rerquired Data Entry fields */
-.form-group [data-toggle="floatLabel"]:required + label {
-  /*  color: rgb(255, 0, 0);  */
-    
-}
 
-/* Custom Styles for Textarea */
-.form-group.form-group-textarea {
- /*   background-color: rgb(0, 0, 0); */
-/*	border-radius: 1px;   */
-/*	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); */
-    margin: auto;   /* Was 20px 15px  */
-	position: relative; 
-
-}
 /* Member of the classes  */
 .form-group.form-group-textarea textarea {
-    height: 100px;                /* 34px  */
-    resize:none; /* Originall None */
-    margin-top:   10px;
+    height: 10em;                
+    resize:none; 
+    margin-top: 1em;
 }
 
-/* Affects floating font size of the floating label in text box  */
-.form-group.form-group-textarea label {
-/*  color: rgb(255, 255, 255); */                /* originally rgb(160,160,160) */ 
-/*	font-family: 'Roboto', sans-serif; */
-/*	font-size: 1em;    */
-/*	font-weight: 500;  */
-}
-
-/* Text Box   */
-.form-group.form-group-textarea .form-control {
-	border-radius: 0;
-    border-width: 0;
-/*	box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);  */
-}
-
-/* Final Position of floating Label in textarea */
-.form-group.form-group-textarea [data-toggle="floatLabel"] + label {
-	top: 2px;
-}
-
-/* Positioning and condition of all original placeholder label before running */
-.form-group [data-toggle="floatLabel"][data-value=""] {
-    padding-top: 6px;
-}
 
 /* Starting Condition of floating label in all fields */
 .form-group [data-toggle="floatLabel"][data-value=""] + label {
 	opacity: 0;
-	top: 18px; 
+	top: 1em; 
 }
 
