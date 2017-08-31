@@ -52,26 +52,37 @@ div#header {
     padding: 4em;
 	margin-top: 4em;
     color: white;
-    border-radius: 4em 4em 0 0;
+    border-radius: 4em 4em 0 0; 
 }
 
 #row_3 {
     
     background-color: #00FF40;
-    padding: 3em;
+    padding: 3em 3em 5em 3em;
     color: black;
     
 }
 
-
 #row_4 {
+	padding-top: 3em;
+    background-color: bisque;	
+		
+}
+
+#row_5 {
+    
+    background-color: rgb(200,200,200);
+	padding: 0 2em 0 2em; 
+}
+
+#row_6 {
     
     background-color: rgb(200,200,200);
 	padding: 0 2em 3em 2em; 
     border-radius: 0 0 4em 4em;
 }
 
-#row_5 {
+#row_7 {
     
     background-color: black;
     color: white;
@@ -88,7 +99,7 @@ div#header {
 /* reduce widths of rows 2,3,4 and 5 */
 div.resize {
     
-    width: 60%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;  
 }
@@ -100,7 +111,8 @@ div.resize {
 	margin: 0 1.5em 0 1.5em;
     height: 5em;
     width: 5em;
-    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3); 
+    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3), .1em .1em .25em red;
+	border: none;
 }
 
 
@@ -133,10 +145,7 @@ div.resize {
 }
 
 #linkButtonHeading {
-    font-size: 3em;
-	margin-bottom: 1em;
-	font-weight: 800;
-	text-shadow:  .2em .2em .05em rgba(0, 0, 0, 0.3);
+	width: 7em;
     
 }
 
@@ -147,7 +156,7 @@ blockquote {
 /* Used to round corner of thumbnail images */
 .cornersRounded {
     
-    border-radius: 20%;
+    border-radius: 6em;
     padding: 3em;
 }
 
@@ -160,11 +169,15 @@ blockquote {
 
 }
 
+.title-font-weight {
+	font-weight: 800;
+}
+
 #row4_heading_adj {
     padding-top: 1em;
     padding-bottom: 1em;
-	text-shadow: .15em .15em .05em rgba(0, 0, 0, 0.3);
-	font-weight: 800;
+	text-shadow: .15em .15em .05em rgba(0, 0, 0, 0.3), .1em .1em .25em red; 
+	color: black;
 }
 
 /* Used in portrait picture */
@@ -181,25 +194,38 @@ blockquote {
     float:left;  
     margin-top: 1.3em;
     color: gray;
-    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3); 
+    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3), .1em .1em .25em red;
+	border: none;
 }
 
 #paragraph_style {
   padding-left: 2em;
   text-align: justify;
-  text-shadow:  .2em .2em .05em rgba(0, 0, 0, 0.96);
+  text-shadow: .1em .1em .25em red; 
+  color: black;
 }
 
 #buttonLink {
     
-    margin-top : 6em;
+    margin-top : 0;
+	display: flex;
+  	justify-content: left;
+  	align-items: left; 
+	
 }
 
+#button_collection {
+	display: flex;
+  	justify-content: left;
+  	align-items: left;
+}
 
 .jumbotron {
     
     background-color: gray;
 }
+
+
 
 /* Makes all images fit the same way inside the thumbnail */
 .thumbnail img {
@@ -209,18 +235,34 @@ blockquote {
 
 .thumbnail {
     border-radius: 2em;
-    height: 30em;
 	padding-bottom: 5em;
+    margin-left: 1.5em;
+	margin-right: 1.5em;
 }
+
+
+
+.table th {
+	color: black;
+	font-weight: 900;
+}
+
+
+.caption {
+	font-family: Lobster;
+}
+
+
 
 /* Basic Style */
 .form-group {
     position: relative; 
-    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3);
+    box-shadow: 1em 1em .5em rgba(0, 0, 0, 0.3), .1em .1em .25em red; 
     color: rgb(255, 0, 0);
     font-family: 'Roboto', sans-serif;
     font-size: 1em;  
     font-weight: 500;
+	border: none;
 }
 
 /* Height and padding for Entry Data Field, affects all field since it is a base class of all fields */
@@ -253,4 +295,8 @@ blockquote {
 	opacity: 0;
 	top: 1em; 
 }
+
+
+
+
 
